@@ -38,10 +38,10 @@ $(document).bind("ready", function() {
 
 
 
-    Vicky.ResizeContent();
-    $(window).resize(function() {
-        Vicky.ResizeContent();
-    });
+    // Vicky.ResizeContent();
+    // $(window).resize(function() {
+    //     Vicky.ResizeContent();
+    // });
     //Initialize screens of the game
     initGame();
     //cargaBarraProgresoIntro(5);

@@ -51,9 +51,9 @@
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- main.css -->
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
-    <!-- main.css prod-->
-    <link rel="stylesheet" href="css/main.min.css">
+     <link rel="stylesheet" href="css/main.css"> 
+    <!-- main.css prod
+    <link rel="stylesheet" href="css/main.min.css">-->
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -289,7 +289,7 @@
             </tr>
         </tfoot>
     </table>
-    <table id="instrucciones" class="pantalla">
+    <!-- <table id="instrucciones" class="pantalla">
         <thead>
             <tr>
                 <td colspan="2">
@@ -338,8 +338,8 @@
                 </td>
             </tr>
         </tfoot>
-    </table>
-    <!--<div id="instrucciones">
+    </table> -->
+    <div id="instrucciones">
 
         <div class='col-xs-12 col-md-offset-3 col-md-6 text-center' id='textoIntro'>
             INSTRUCCIONES:
@@ -348,13 +348,13 @@
                 <li>Observa la silueta de la carta y lee la pista
                 </li>
                 <br>
-                <li>Elige entre las opciones el nombre del personaje correcto, antes de que el tiempo se agote
+                <li>Al paso del tiempo aparecerá una nueva pista en la silueta y en el texto.
                 </li>
                 <br>
-                <li>Si el personaje que elegiste es incorrecto, aparecerá otro elemento a la silueta y una nueva pista
+                <li>Elige entre las opciones el nombre del personaje correcto, antes de que el tiempo se agote.
                 </li>
                 <br>
-                <li>Tienes 3 pistas para adivinar el personaje correcto
+                <li>Tienes 3 pistas y unos cuantos segundos para adivinar el personaje correcto.
                 </li>
             </ol>
 
@@ -362,7 +362,7 @@
 
         </div>
 
-    </div>-->
+    </div>
 
 
     <div id="puntuacion">
@@ -456,7 +456,7 @@
         a.async = 1;
         a.src = g;
         m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-54524886-1', 'auto');
     ga('send', 'pageview');
