@@ -115,10 +115,11 @@ $(document).bind("ready", function() {
         Vicky.score = 0;
         Vicky.countHeroes = 0;
         Vicky.lives = 3;
+        Vicky.listaUsados = new Array();
         clearTimeout(tiempoBarra);
         clearTimeout(tiempoBarraMaster);
         //Init variables
-        Vicky.InitVars(Vicky.countHeroes);
+        // Vicky.InitVars(Vicky.countHeroes);
 
         paintLives();
         //Load View Cards
@@ -172,7 +173,7 @@ function loadCard(clase) {
         "</div></div>";
 
     $("." + clase).append(cadena);
-
+    $("input").prop('disabled', false);
     //Load Tooltip
     // $('#pistaButt').tooltip('show');
 
@@ -208,6 +209,7 @@ function loadCard(clase) {
     $('input').on('ifChecked', function(event) {
         // alert(event.type + ' callback');
         Vicky.SonidoClick();
+        $("input").prop('disabled', true);
         coreGame();
 
     });

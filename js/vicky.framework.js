@@ -54,6 +54,9 @@ Vicky.opciones = new Array();
 
 Vicky.ListaRandom;
 Vicky.ListaRandomValores;
+Vicky.listaUsados = new Array();
+
+
 //Resultado
 Vicky.Respuesta = new Array();
 Vicky.Resultado;
@@ -204,7 +207,7 @@ Vicky.InitVars = function (level) {
     if (level < (Vicky.ListaHeroes.length - 1)){
     Vicky.opciones = new Array();
 
-    var index = parseInt(Math.round(Math.random() * (Vicky.ListaHeroes.length-1)));
+    var index = Vicky.numeroAleatorio();
     Vicky.Heroe = index;
     
     // alert(index);
@@ -336,14 +339,33 @@ Vicky.InitVars = function (level) {
     // Vicky.ResizeContent();
 }
 
-Vicky.EvaluaNivel = function () {
-    Vicky.Resultado = new Array();
-    
 
-    if ($.inArray(false, Vicky.Resultado) != -1) return false;
-    else return true;
+Vicky.numeroAleatorio = function(){
+
+    
+    
+    var rep = true;
+    var num;
+    while (rep != false){
+        num = parseInt(Math.round(Math.random() * (Vicky.ListaHeroes.length-1)));
+        rep = Vicky.repetido(num);
+    }
+
+    Vicky.listaUsados.push(num)
+    return num;
 
 }
+
+Vicky.repetido = function(num){
+    var flag = false;
+    for (var i = 0; i< Vicky.listaUsados.length; i++){
+        if (num == Vicky.listaUsados[i]){
+            flag = true;
+        }
+    }
+    return flag;
+}
+
 
 Vicky.ResizeContent = function () {
     Vicky.height = Math.floor(window.innerHeight);
