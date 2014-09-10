@@ -38,10 +38,10 @@ $(document).bind("ready", function() {
 
 
 
-    // Vicky.ResizeContent();
-    // $(window).resize(function() {
-    //     Vicky.ResizeContent();
-    // });
+    Vicky.ResizeContent();
+    $(window).resize(function() {
+        Vicky.ResizeContent();
+    });
     //Initialize screens of the game
     initGame();
     //cargaBarraProgresoIntro(5);
@@ -139,6 +139,8 @@ function nextTip() {
         $("#pista").append("<span>" + Vicky.ListaPistas[Vicky.Heroe][Vicky.pistas++] + "</span>");
         $("#carta").html(Vicky.imagesHeroes[Vicky.Heroe][(Vicky.pistas - 1)]);
 
+        Vicky.scoreCard -= 5;
+
         if (Vicky.pistas == 3) {
             $('#pistaButt').tooltip('hide');
             $("#pistaButt").remove();
@@ -213,6 +215,8 @@ function loadCard(clase) {
         coreGame();
 
     });
+
+    Vicky.scoreCard = 15;
 
     //Load bar progress
     Vicky.timer = 15;
@@ -392,7 +396,7 @@ function LoadFieldAndEvaluate() {
     var answerSelec = $('input[name=heroe]:checked').val();
 
     if (Vicky.Heroe == answerSelec && answerSelec != undefined) {
-        Vicky.score = Vicky.score + 10;
+        Vicky.score = Vicky.score + Vicky.scoreCard;
         contador = 0;
         clearTimeout(tiempoBarra);
         clearTimeout(tiempoBarraMaster);

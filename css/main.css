@@ -397,7 +397,7 @@ body {
 }
 #textoIntro {
     color: white;
-    font-size: 19px;
+    font-size: 23px;
 }
 #padre {
     height: 250px;
@@ -417,7 +417,8 @@ body {
     box-shadow: 0px 3px 1px #B5BB05;
     color: #4d4d4d;
     border-color: #e1e64d;
-    width: 100px;
+    width: 140px;
+    font-size: 23px;
 }
 #jugar:hover {
     background: #D6DD0F;
@@ -499,6 +500,13 @@ body {
 #heroe{
   padding-top: 100px;
 }
+
+#divPromocion{
+    width: 70%;
+}
+#titleInstru{
+    font-size: 25px;
+}
 /*.oppista {
     padding-left: 40px;
 }*/
@@ -515,11 +523,46 @@ body {
     .oppista {
         padding-left: 130px;
     }
+
+    #divPromocion{
+    width: 100%;
+    }
+
+    #jugar{
+        width: 130px;
+        font-size: 19px;
+    }
+
+    #textoIntro{
+        font-size: 20px;
+    }
+    #titleInstru{
+    font-size: 23px;
+    }
+
 }
 @media screen and (max-width: 650px) {
     .oppista {
         padding-left: 40px;
     }
+    #divPromocion{
+    width: 100%;
+    }
+
+    #jugar{
+        width: 120px;
+        font-size: 15px;
+    }
+
+    #textoIntro{
+        font-size: 15px;
+    }
+
+     #titleInstru{
+    font-size: 20px;
+    }
+
+   
 }
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {}
 

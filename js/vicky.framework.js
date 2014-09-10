@@ -35,7 +35,7 @@ Vicky.imagesHeroes[8] = new Array()
 
 Vicky.flagAnswer;
 Vicky.timer = 10;
-Vicky.ListaHeroes =["Miguel Hidalgo y Costilla","Jose Maria Morelos y Pavon", "Vicente Guerrero", "Ignacio Allende", "Agustin de Iturbide", "Josefa Ortiz de Dominguez","Leona Vicario","Guadalupe Victoria","Pipila"]; 
+Vicky.ListaHeroes =["Miguel Hidalgo y Costilla","José María Morelos y Pavon", "Vicente Guerrero", "Ignacio Allende", "Agustín de Iturbide", "Josefa Ortiz de Domínguez","Leona Vicario","Guadalupe Victoria","Pípila"]; 
 Vicky.ListaImagenes = ["chidalgo", "cmorelos", "cguerrero","callende","citurbide","cjosefa","cleona","cvictoria","cpipila"];
 
 Vicky.ListaPistas = [];
@@ -50,6 +50,7 @@ Vicky.ListaPistas[7] = ["Fue el primer presidente de la República.", "Se distin
 Vicky.ListaPistas[8] = ["Participa en la toma de la Alhóndiga de Granaditas.", "No hay registro oficial sobre la existencia de este personaje.", "Se cree que cargó una losa en su espalda para así llegar a la puerta de la alhóndiga e incendiarla."];
 Vicky.Heroe;
 Vicky.countHeroes = 0;
+Vicky.scoreCard = 15;
 Vicky.opciones = new Array();
 
 Vicky.ListaRandom;
@@ -377,18 +378,19 @@ Vicky.ResizeContent = function () {
     Vicky.fontSize = Math.floor(Vicky.height * 0.3);
 
     $(".pantalla").css("height", Vicky.height + "px");
-    $("#instrucciones").css("width", "40%");
+    // $("#instrucciones").css("width", "40%");
 
-    $("#instrucciones thead tr").css("height", Math.floor(Vicky.height * 0.25) + ("px"));
-    $("#instrucciones thead").css("text-align", "center");
-    $("#instrucciones thead").css("vertical-align", "bottom");
+//     $("#instrucciones thead tr").css("height", Math.floor(Vicky.height * 0.25) + ("px"));
+//     $("#instrucciones thead").css("text-align", "center");
+//     $("#instrucciones thead").css("vertical-align", "bottom");
     $(".titulo").css("font-size", Math.floor(Vicky.fontSize * 0.2) + "px");
-    $("#instrucciones tbody").css("height", Math.floor(Vicky.height * 0.50) + ("px"));
-    $("#instrucciones tbody tr").css("height", "25%");
-    $("#instrucciones tbody td").css("font-size", Math.floor(Vicky.fontSize * 0.1) + "px");
-    $("#instrucciones tbody").css("border-radius", "10px");
-    $("#instrucciones tfoot td").css("height", Math.floor(Vicky.height * 0.24) + ("px"));
-    $("#instrucciones tfoot td").css("vertical-align", "middle");
+    // $("#textoIntro").css("font-size", Math.floor(Vicky.fontSize * 0.2) + "px");
+    // $("#instrucciones tbody").css("height", Math.floor(Vicky.height * 0.50) + ("px"));
+    // $("#instrucciones tbody tr").css("height", "25%");
+    // $("#instrucciones tbody td").css("font-size", Math.floor(Vicky.fontSize * 0.1) + "px");
+    // $("#instrucciones tbody").css("border-radius", "10px");
+    // $("#instrucciones tfoot td").css("height", Math.floor(Vicky.height * 0.24) + ("px"));
+    // $("#instrucciones tfoot td").css("vertical-align", "middle");
 
     $("#intro").css("width", "80%");
     $("#intro thead td").css("height", Math.floor(Vicky.height * 0.05) + ("px"));
