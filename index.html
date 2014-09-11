@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!--[if lt IE 7 ]> <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
 <html lang="es" class="no-js">
 <!--<![endif]-->
 
@@ -12,7 +13,6 @@
     <title>Caudillos de México</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="Description" content="La felicidad general de un pueblo descansa en la independencia individual de sus habitantes.">
     <!-- for Google -->
     <meta name="keywords" content="caudillos heroes banco azteca elektra bancoazteca mexico patria credimax credito feria" />
@@ -51,21 +51,13 @@
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 
     <!-- main.css -->
-     <link rel="stylesheet" href="css/main.css"> 
-    <!--main.css prod
-    <link rel="stylesheet" href="css/main.min.css"> -->
+     <!--<link rel="stylesheet" href="css/main.css"> 
+    <main.css prod-->
+    <link rel="stylesheet" href="css/main.min.css"> 
 
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-    <script type="text/javascript">
-    if (Modernizr.csstransforms3d) {
-        //alert("BROWSER SUPPORT 3D");
-        console.log("BROWSER SUPPORT 3D");
-    } else {
-        //alert("BROWSER NOT SUPPORT 3D");
-        console.log("BROWSER NOT SUPPORT 3D");
-    }
-    </script>
+
 
 </head>
 
@@ -263,11 +255,9 @@
         <tbody>
             <tr>
                 <td id='textoIntro'>
-                    <em>"Un hombre libre es aquel que, teniendo fuerza y talento para hacer una cosa, no encuentra trabas a su voluntad"</em>
-                    <br>
-                    <img src="images/intro.png" style="width:80%; margin: 0 auto;">
+                    <img src="images/intro2.png" style="width:80%; margin: 0 auto;">
                     <br />
-
+                    <em>"Un hombre libre es aquel que, teniendo fuerza y talento para hacer una cosa, no encuentra trabas a su voluntad"</em>
                 </td>
             </tr>
         </tbody>
@@ -341,20 +331,20 @@
     </table> -->
     <div id="instrucciones">
 
-        <div class='col-xs-12 col-md-offset-3 col-md-6 text-center' id='textoIntro'>
+        <div class='col-xs-12 col-md-offset-3 col-md-6 text-center' id='textoIntro' style="padding-top: 40px;">
             <span id="titleInstru"> INSTRUCCIONES:</span>
             <br>
             <ol id="divInstrucciones">
                 <li>Observa la silueta de la carta y lee la pista
                 </li>
                 <br>
-                <li>Al paso del tiempo aparecerá una nueva pista en la silueta y en el texto.
+                <li>Al paso del tiempo aparecerá una nueva pista en la silueta y en el texto
                 </li>
                 <br>
-                <li>Elige entre las opciones el nombre del personaje correcto, antes de que el tiempo se agote.
+                <li>Elige entre las opciones el nombre del personaje correcto, antes de que el tiempo se agote
                 </li>
                 <br>
-                <li>Tienes 3 pistas y unos cuantos segundos para adivinar el personaje correcto.
+                <li>Tienes 3 pistas y unos cuantos segundos para adivinar el personaje correcto
                 </li>
             </ol>
 
@@ -368,7 +358,7 @@
     <div id="puntuacion">
 
         <div id="row">
-            <div class='col-xs-12 col-md-offset-3 col-md-6 text-center'>
+            <div class='col-xs-12 col-md-offset-3 col-md-6 text-center' style="padding-top: 40px;">
                 <img src="images/trofeo.png" width="300px;">
             </div>
         </div>
@@ -419,6 +409,28 @@
 
     </div>
 
+     <div id="navegadorViejo">
+
+        <div id="row">
+            <div class='col-xs-12 col-md-12 text-center' id='textoIntro' style="padding-top: 40px;">
+                 <span id="titleInstru"> Actualiza tu navegador, recomendamos estos navegadores.</span>
+            </div>
+        </div>
+
+        <div id="row">
+            <div class='col-xs-12 col-md-4 text-center' style="padding-top: 40px;">
+                <a href="http://www.google.com.mx/intl/es-419/chrome/"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Google_Chrome_icon_and_wordmark_%282011%29.svg/250px-Google_Chrome_icon_and_wordmark_%282011%29.svg.png"></a>
+            </div>
+             <div class='col-xs-12 col-md-4 text-center' style="padding-top: 40px;">
+                <a href="https://www.mozilla.org/es-MX/firefox/new/"><img src="https://mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06"></a>
+            </div>
+             <div class='col-xs-12 col-md-4 text-center' style="padding-top: 40px;">
+                <a href="http://www.microsoft.com/es-mx/download/internet-explorer-10-details.aspx"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Internet_Explorer_10_logo.svg/50px-Internet_Explorer_10_logo.svg.png"></a>
+            </div>
+        </div>
+
+    </div>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')
@@ -439,9 +451,9 @@
     Vicky Framework Prod -->
    <script type="text/javascript" src="js/Vicky.Framework.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
-    <!-- <script type="text/javascript" src="js/main.js"></script>
-    main.js Prod -->
-    <script type="text/javascript" src="js/main.min.js"></script>
+    <!--<script type="text/javascript" src="js/main.js"></script>
+      main.js Prod -->
+    <script type="text/javascript" src="js/main.min.js"></script> 
     <!-- utils.js Prod -->
     <script type="text/javascript" src="js/utils.min.js"></script>
 
@@ -461,6 +473,7 @@
     ga('create', 'UA-54524886-1', 'auto');
     ga('send', 'pageview');
     </script>
+
 
 </body>
 

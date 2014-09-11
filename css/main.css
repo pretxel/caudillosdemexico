@@ -251,7 +251,7 @@ h1 {
     line-height: 80px;
 }
 body {
-    background: white;
+    background:rgb(175, 37, 98);
     background-image: url('../images/404.png');
 }
 .panel {
@@ -371,7 +371,7 @@ body {
     padding: 7px;
     color: white;
     font-size: 20px;
-    height: 100px;
+    height: 120px;
 }
 #pista span {
     width: 90%;
@@ -471,7 +471,6 @@ body {
     text-align: left;
 }*/
 #instrucciones {
-    width: 60%;
     min-width: 300px;
     margin: 0 auto;
     text-align: center;
@@ -498,7 +497,7 @@ body {
     background-position: center center;
 }
 #heroe{
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 #divPromocion{

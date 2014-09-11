@@ -1,6 +1,35 @@
 $(document).bind("ready", function() {
 
 
+    // Detecting IE
+    var oldIE;
+    if ($('html').is('.ie6, .ie7, .ie8, .ie9')) {
+        oldIE = true;
+    }
+
+    if (oldIE) {
+        // Here's your JS for IE..
+        // console.log("OldIE");
+        $("#intro").hide();
+        $("#navegadorViejo").show();
+        
+    } else {
+        // ..And here's the full-fat code for everyone else
+        // console.log("newIE");
+
+
+        Vicky.ResizeContent();
+        $(window).resize(function() {
+            Vicky.ResizeContent();
+        });
+        //Initialize screens of the game
+        initGame();
+        //cargaBarraProgresoIntro(5);
+
+    }
+
+
+
     $(".facebook").attr("href", "http://www.facebook.com/sharer.php?u=" + encodeURIComponent("http://www.caudillosdemexico.com"));
     $(".twitter").attr("href", "https://twitter.com/share?text=Pon a prueba tus conocimientos con Banco Azteca.&url=" + encodeURIComponent("http://caudillosdemexico.com"));
 
@@ -36,29 +65,6 @@ $(document).bind("ready", function() {
 
 
 
-
-
-    Vicky.ResizeContent();
-    $(window).resize(function() {
-        Vicky.ResizeContent();
-    });
-    //Initialize screens of the game
-    initGame();
-    //cargaBarraProgresoIntro(5);
-
-
-
-
-    function initGame() {
-        preload();
-        $("#intro").hide();
-        $("#instrucciones").hide();
-        $("#f1_container").hide();
-        $("#menu").hide();
-        $("#puntuacion").hide();
-        $("#intro").show();
-        cargaBarraProgresoIntro(5);
-    }
 
 
 
@@ -130,6 +136,19 @@ $(document).bind("ready", function() {
 
 
 });
+
+
+function initGame() {
+    preload();
+    $("#intro").hide();
+    $("#instrucciones").hide();
+    $("#f1_container").hide();
+    $("#menu").hide();
+    $("#puntuacion").hide();
+    $("#intro").show();
+    $("#navegadorViejo").hide();
+    cargaBarraProgresoIntro(8);
+}
 
 
 function nextTip() {
@@ -411,7 +430,7 @@ function LoadFieldAndEvaluate() {
 
 
 
-    console.log(Vicky.Heroe);
+    // console.log(Vicky.Heroe);
     return false;
 
 }

@@ -144,12 +144,12 @@ Vicky.Ajax = function (params) {
 
     if (typeof (callback) == "undefined") {
         callback({ Error: true, MensajeError: "No ha indicado la Callback", Resultado: null });
-        console.log(e.message);
+        //console.log(e.message);
     }
 
     if (typeof (uri) == "undefined") {
         callback({ Error: true, MensajeError: "No ha indicado el URI", Resultado: null });
-        console.log(e.message);
+        //console.log(e.message);
     }
 
     if (typeof (method) == "undefined") {
@@ -176,7 +176,7 @@ Vicky.Ajax = function (params) {
         },
         error: function (e) {
             callback({ Error: true, MensajeError: e.message, Resultado: null });
-            console.log(e.message);
+            //console.log(e.message);
         }
     });
 }
@@ -239,8 +239,8 @@ Vicky.InitVars = function (level) {
 
      }else{
         //Termina Juego muestra pantalla con puntaje
-        alert("TERMINA");
-        console.log("Termina");
+        //alert("TERMINA");
+        //console.log("Termina");
 
      }
 
